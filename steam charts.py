@@ -78,7 +78,7 @@ if __name__ == '__main__':
     Initialize excel workbook.
     Name is dynamically created by date.
     """
-    name = 'steam_chart-' + time.strftime("%Y-%m-%d") + '.xls'
+    name = r'./download/steam_chart-' + time.strftime("%Y-%m-%d") + '.xls'
     if os.path.exists(name):
         os.remove(name)
     book = xlwt.Workbook(encoding='utf-8', style_compression=0)
